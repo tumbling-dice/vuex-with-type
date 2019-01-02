@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import store, { SearchAction } from "../store/index.js";
 export default {
   name: "SearchForm",
   data() {
@@ -19,7 +20,7 @@ export default {
   },
   methods: {
     async onSearch() {
-      await this.$store.dispatch("search", { id: this.id });
+      await store.dispatch(new SearchAction.Search(this.id));
     }
   }
 };

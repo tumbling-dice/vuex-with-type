@@ -16,3 +16,8 @@ const store = new Vuex.Store({
 export default store;
 /** @type {SearchState} */
 export const searchState = store.state[nsSearch];
+export {
+  SearchMutation,
+  SearchAction
+}
+from './modules/search/index';
