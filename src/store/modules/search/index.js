@@ -10,6 +10,10 @@ const module = {
 
 export default module;
 export {
+  SearchState
+}
+from "./state";
+export {
   default as nsSearch
 }
 from "./namespace";

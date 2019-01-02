@@ -1,7 +1,8 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import searchModule, {
-  nsSearch
+  nsSearch,
+  SearchState
 } from './modules/search/index';
 
 Vue.use(Vuex);
@@ -13,3 +14,5 @@ const store = new Vuex.Store({
 });
 
 export default store;
+/** @type {SearchState} */
+export const searchState = store.state[nsSearch];

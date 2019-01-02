@@ -14,11 +14,13 @@
 </template>
 
 <script>
+import { searchState } from "../store/index.js";
+
 export default {
   name: "SearchResult",
   computed: {
     result() {
-      return this.$store.state.search.result;
+      return searchState.result;
     }
   }
 };
